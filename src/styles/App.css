@@ -1,0 +1,128 @@
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: rgb(200,179,215);
+  background: radial-gradient(circle, rgba(200,179,215,1) 42%, rgba(148,187,233,1) 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  backdrop-filter: blur(3px);
+}
+
+/* Reusable glass card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #fff;
+}
+
+/* Improve buttons */
+.btn {
+  transition: all 0.2s ease-in-out;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Nav pills (task filter) */
+.nav-pills .nav-link {
+  font-weight: 500;
+  border-radius: 20px;
+  padding: 6px 14px;
+}
+
+/* Task Card Text Styles */
+
+.task-title {
+  font-family: "Noteworthy", "Apple Chancery", cursive;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.task-desc {
+  font-family: "Times New Roman", Times, serif;
+  color: #000;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  white-space: pre-wrap;
+}
+
+.task-dates {
+  color: #00000077;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.app-title {
+  font-size: 3rem;
+  font-weight: 800;
+  background: radial-gradient(circle, #3083e2 0%, #9d47da 93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  display: inline-block;
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Glassy Form Controls */
+
+.form-control {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-radius: 10px;
+  color: #0e0b0b;
+  padding: 10px 14px;
+  font-size: 1rem;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: background-color 0.3s ease;
+}
+
+.form-control::placeholder {
+  color: #a29696;
+  font-style: italic;
+}
+
+.form-control:focus {
+  background-color: rgba(255, 255, 255, 0.25);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.4);
+}
+
+.form-label {
+  color: #0a0505;
+  font-weight: 500;
+}
+label::after {
+  content: "*";
+  color: red;
+  padding-left: 0.1em; 
+}
+
+label.required::after { 
+  content: "*";
+  color: red;
+}
+
+
+.text-danger {
+  font-weight: bold;
+}
+
