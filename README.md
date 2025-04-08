@@ -25,11 +25,3 @@ A simple task management application built with ReactJS. It allows users to add,
 - Bootstrap
 - useReducer (for state management)
 
-
-## Installation
-
-Navigate to the project directory:
-cd task-management-app
-
-Install dependencies:
-npm install
